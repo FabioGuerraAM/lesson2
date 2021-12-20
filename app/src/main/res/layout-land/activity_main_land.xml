@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/crew4"
-    tools:context=".MainActivity">
+    tools:ignore="MissingDefaultResource">
 
     <Button
         android:id="@+id/one"
@@ -16,7 +16,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/zero"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/two"
@@ -27,7 +28,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/zero"
-        app:layout_constraintLeft_toRightOf="@id/one" />
+        app:layout_constraintLeft_toRightOf="@id/one"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/three"
@@ -38,7 +40,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/comma"
-        app:layout_constraintLeft_toRightOf="@id/two" />
+        app:layout_constraintLeft_toRightOf="@id/two"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/four"
@@ -49,7 +52,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/one"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/five"
@@ -61,7 +65,7 @@
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/two"
         app:layout_constraintLeft_toRightOf="@id/four"
-        />
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/six"
@@ -72,7 +76,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/three"
-        app:layout_constraintLeft_toRightOf="@id/five" />
+        app:layout_constraintLeft_toRightOf="@id/five"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/seven"
@@ -83,7 +88,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/four"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/eight"
@@ -94,7 +100,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/five"
-        app:layout_constraintLeft_toRightOf="@id/seven" />
+        app:layout_constraintLeft_toRightOf="@id/seven"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/nine"
@@ -105,7 +112,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/six"
-        app:layout_constraintLeft_toRightOf="@id/eight" />
+        app:layout_constraintLeft_toRightOf="@id/eight"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/zero"
@@ -117,7 +125,8 @@
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/comma" />
+        app:layout_constraintRight_toLeftOf="@id/comma"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/comma"
@@ -129,7 +138,8 @@
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toBottomOf="@id/zero"
         app:layout_constraintLeft_toLeftOf="@id/three"
-        app:layout_constraintRight_toRightOf="@id/three" />
+        app:layout_constraintRight_toRightOf="@id/three"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/plus"
@@ -140,7 +150,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/equals"
-        app:layout_constraintLeft_toRightOf="@id/three" />
+        app:layout_constraintLeft_toRightOf="@id/three"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/minus"
@@ -151,7 +162,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/plus"
-        app:layout_constraintLeft_toRightOf="@id/six" />
+        app:layout_constraintLeft_toRightOf="@id/six"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/multiply"
@@ -162,7 +174,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/minus"
-        app:layout_constraintLeft_toRightOf="@id/nine" />
+        app:layout_constraintLeft_toRightOf="@id/nine"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/division"
@@ -173,7 +186,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/multiply"
-        app:layout_constraintLeft_toRightOf="@id/nine" />
+        app:layout_constraintLeft_toRightOf="@id/nine"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/clear"
@@ -184,7 +198,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/eight"
-        app:layout_constraintLeft_toRightOf="@id/seven" />
+        app:layout_constraintLeft_toRightOf="@id/seven"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/delete"
@@ -195,7 +210,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toTopOf="@id/nine"
-        app:layout_constraintLeft_toRightOf="@id/eight" />
+        app:layout_constraintLeft_toRightOf="@id/eight"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/equals"
@@ -206,7 +222,8 @@
         android:textColor="#f0f8ff"
         android:textSize="@dimen/buttonTextSize"
         app:layout_constraintBottom_toBottomOf="@id/comma"
-        app:layout_constraintLeft_toRightOf="@id/comma" />
+        app:layout_constraintLeft_toRightOf="@id/comma"
+        android:layout_marginLeft="@dimen/button_margin"/>
 
     <Button
         android:id="@+id/percent"
@@ -238,6 +255,5 @@
         android:textSize="@dimen/buttonTextSizeVisible"
         android:textColor="@color/white"
         tools:ignore="MissingConstraints" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
